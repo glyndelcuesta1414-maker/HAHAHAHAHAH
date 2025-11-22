@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Surprise for You ❤️</title>
+
+<style>
+  body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding: 50px;
+    background: linear-gradient(135deg, #ff9a9e, #fecfef);
+    color: #fff;
+  }
+
+  h1 {
+    font-size: 2.6em;
+    text-shadow: 2px 2px #ff6f91;
+  }
+
+  button {
+    padding: 15px 25px;
+    font-size: 20px;
+    border: none;
+    border-radius: 15px;
+    background-color: #ff6f91;
+    color: white;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: 0.3s;
+  }
+
+  button:hover {
+    transform: scale(1.1);
+    background-color: #ff8fab;
+  }
+
+  .message-box {
+    margin-top: 40px;
+    font-size: 22px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 25px;
+    border-radius: 15px;
+    width: 80%;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    display: none;
+    backdrop-filter: blur(5px);
+  }
+
+  .heart {
+    font-size: 60px;
+    animation: beat 0.8s infinite;
+    display: none;
+    margin-top: 20px;
+  }
+
+  @keyframes beat {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.3); }
+    100% { transform: scale(1); }
+  }
+</style>
+
+</head>
+<body>
+
+<h1>Hi Love ❤️</h1>
+<p>May little surprise ako para sa'yo…</p>
+
+<button onclick="showSurprise()">Click Here 💕</button>
+
+<div class="message-box" id="msgBox">
+  Hi love, gusto ko lang sabihin na sobrang special ka sa’kin.  
+  Thank you for being my happiness araw‑araw.  
+  I love you more than words can say. ❤️  
+</div>
+
+<div class="heart" id="heart">💖</div>
+
+<script>
+function showSurprise() {
+  document.getElementById('msgBox').style.display = 'block';
+  document.getElementById('heart').style.display = 'block';
+}
+</script>
+
+</body>
+</html>
